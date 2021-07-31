@@ -2,6 +2,7 @@
 
 body {
   font-family: "Poppins", sans-serif;
+  background-color: #803b47;
 }
 
 .attribution {
@@ -9,5 +10,5 @@ body {
   text-align: center;
 }
 .attribution a {
-  color: hsl(352, 43%, 51%);
+  color: #d14b64;
 }
