@@ -4,22 +4,40 @@ body {
   font-family: "Poppins", sans-serif;
   background-color: #8f9096;
   /* background-color: #803b47; */
+}
+
+.container {
+  margin: 32px 16px 0px;
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-content: center;
 }
 
 .card {
-  margin: 16px;
   background-color: azure;
   border-radius: 10px;
-  /* align-self: center; */
+  margin-bottom: 32px;
 }
 
 .card img {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
   width: 100%;
   height: auto;
+}
+
+.image {
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  width: 100%;
+  /* position: static; */
+  background: linear-gradient(to right, #3204fdba, #9907facc),
+    url(https://images.unsplash.com/photo-1531482615713-2afd69097998?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80)
+      no-repeat center center;
 }
 
 .title {
@@ -36,21 +54,21 @@ body {
 
 .subtitle {
   text-align: center;
-  padding: 0px 24px 24px;
+  padding: 0px 24px 16px;
   font-weight: 400;
-  font-size: 12pt;
+  font-size: 11pt;
   color: rgb(109, 118, 118);
 }
 
 .datas {
-  padding-bottom: 40px;
+  padding-bottom: 32px;
 }
 
 .data {
   text-align: center;
   padding: 16px 24px 0px;
   font-weight: 400;
-  font-size: 11pt;
+  font-size: 10pt;
   color: rgb(109, 118, 118);
   text-transform: uppercase;
 }
@@ -65,36 +83,49 @@ body {
 }
 
 .attribution {
+  font-weight: 400;
   font-size: 9pt;
   text-align: center;
-  padding-top: 32px 16px;
-  justify-content: flex-end;
-  align-self: flex-end;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
 }
 .attribution a {
   color: #d14b64;
 }
 
 /* phone width = 320-414 */
+
 @media (min-width: 415px) {
+  .container {
+    height: 90vh;
+    margin-left: 160px;
+    margin-right: 160px;
+  }
+
   .card {
     display: flex;
-    flex-direction: row;
+    flex-direction: row-reverse;
+    margin: 0px;
   }
 
   .card img {
     /* justify-content: flex-end; */
-    width: 50vw;
+    border-top-left-radius: 0px;
+    border-bottom-right-radius: 10px;
+    width: 50%;
   }
 
   .content {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    margin: 8px 40px;
   }
 
   .title {
     text-align: left;
+    font-size: 22pt;
   }
 
   .subtitle {
@@ -104,5 +135,18 @@ body {
   .datas {
     display: flex;
     flex-direction: row;
+  }
+
+  .data {
+    text-align: left;
+  }
+
+  .data h6 {
+    text-align: left;
+  }
+
+  .attribution {
+    justify-content: flex-end;
+    padding-right: 32px;
   }
 }
