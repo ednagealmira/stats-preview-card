@@ -171,7 +171,7 @@ h1 span {
   }
 }
 
-@media (min-width: 1025px) {
+@media (min-width: 1024px) {
   body {
     padding-right: 140px;
     padding-left: 140px;
@@ -187,6 +187,7 @@ h1 span {
 
   .data {
     font-size: 10pt;
+    padding-right: 40px;
   }
 
   .data h6 {
