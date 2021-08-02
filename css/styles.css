@@ -120,7 +120,12 @@ body {
 .attribution a {
   color: #d14b64;
 }
-
+.content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 8px 40px;
+}
 /* phone width = 320-414 */
 @media (min-width: 768px) {
   body {
@@ -144,13 +149,6 @@ body {
     border-top-left-radius: 0px;
     border-bottom-right-radius: 10px;
     width: 50%;
-  }
-
-  .content {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    margin: 8px 40px;
   }
 
   .title {
