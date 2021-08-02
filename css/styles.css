@@ -66,6 +66,13 @@ body {
       no-repeat center center;
 }
 
+.content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 8px 16px;
+}
+
 .title {
   text-align: center;
   padding: 32px 24px 16px;
@@ -120,12 +127,7 @@ body {
 .attribution a {
   color: #d14b64;
 }
-.content {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  margin: 8px 40px;
-}
+
 /* phone width = 320-414 */
 @media (min-width: 768px) {
   body {
@@ -149,6 +151,10 @@ body {
     border-top-left-radius: 0px;
     border-bottom-right-radius: 10px;
     width: 50%;
+  }
+
+  .content {
+    margin: 8px 40px;
   }
 
   .title {
@@ -183,7 +189,7 @@ body {
   }
 }
 
-@media (min-width: 1440px) {
+@media (min-width: 1025px) {
   .container {
     margin-left: 160px;
     margin-right: 160px;
