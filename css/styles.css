@@ -77,10 +77,6 @@ h1 span {
   color: rgb(109, 118, 118);
 }
 
-/* .datas {
-  padding-bottom: 32px;
-} */
-
 .data {
   padding-top: 16px;
   text-align: center;
@@ -112,7 +108,6 @@ h1 span {
   color: #d53ea2;
 }
 
-/* phone width = 320-414 */
 @media (min-width: 768px) {
   body {
     padding-top: 32px;
@@ -122,8 +117,6 @@ h1 span {
 
   .container {
     height: 94vh;
-    /* margin-left: 40px;
-    margin-right: 40px; */
   }
 
   .content {
