@@ -7,15 +7,11 @@
 body {
   font-family: "Poppins", sans-serif;
   background-image: linear-gradient(45deg, #e8a9d3, #a9bae8);
-  padding-top: 64px;
-  padding-bottom: 8px;
+  padding: 64px 16px 8px;
   margin: 0px;
-  /* background-color: #803b47; */
 }
 
 .container {
-  margin-left: 16px;
-  margin-right: 16px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -26,14 +22,6 @@ body {
   background-color: azure;
   border-radius: 10px;
 }
-
-/* .card img {
-  border-top-left-radius: 10px;
-  border-top-right-radius: 10px;
-  width: 100%;
-  height: auto;
-  filter: grayscale();
-} */
 
 .container-img {
   position: relative;
@@ -61,72 +49,41 @@ body {
   background-color: #d559ac;
 }
 
-/* .cover {
-  position: absolute;
-  bottom: 0;
-  background: rgb(0, 0, 0);
-  background: rgba(0, 0, 0, 0.5);
-  color: #f1f1f1;
-  width: 100%;
-  transition: 0.5s ease;
-  opacity: 0;
-}
-
-.image-container {
-  position: relative;
-  width: 100%;
-}
-
-.image {
-  display: block;
-  width: 100%;
-  height: auto;
-} */
-
-.imagee {
-  border-top-left-radius: 10px;
-  border-top-right-radius: 10px;
-  width: 100%;
-  /* position: static; */
-  background: linear-gradient(to right, #3204fdba, #9907facc),
-    url(https://images.unsplash.com/photo-1531482615713-2afd69097998?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80)
-      no-repeat center center;
-}
-
-.content {
+.container-content {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  /* margin: 8px 16px; */
 }
 
-.title {
+.content {
+  padding: 32px 24px 50px;
+}
+
+h1 {
   text-align: center;
-  padding: 32px 24px 16px;
   font-weight: 800;
   font-size: 20pt;
   color: rgb(53, 60, 60);
 }
 
-.title span {
+h1 span {
   color: #d53ea2;
 }
 
 .subtitle {
   text-align: center;
-  padding: 0px 24px 16px;
   font-weight: 400;
   font-size: 11pt;
   color: rgb(109, 118, 118);
 }
 
-.datas {
+/* .datas {
   padding-bottom: 32px;
-}
+} */
 
 .data {
+  padding-top: 16px;
   text-align: center;
-  padding: 16px 24px 0px;
   font-weight: 400;
   font-size: 10pt;
   color: rgb(109, 118, 118);
@@ -146,9 +103,9 @@ body {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  margin-top: 64px;
+  padding-top: 64px;
   font-weight: 400;
-  font-size: 8pt;
+  font-size: 7pt;
   text-align: center;
 }
 .attribution a {
@@ -159,12 +116,18 @@ body {
 @media (min-width: 768px) {
   body {
     padding-top: 32px;
+    padding-right: 40px;
+    padding-left: 40px;
   }
 
   .container {
-    height: 90vh;
-    margin-left: 40px;
-    margin-right: 40px;
+    height: 94vh;
+    /* margin-left: 40px;
+    margin-right: 40px; */
+  }
+
+  .content {
+    padding: 50px;
   }
 
   .card {
@@ -182,7 +145,7 @@ body {
     border-radius: 0px 10px 10px 0px;
   }
 
-  .title {
+  h1 {
     text-align: left;
     font-size: 18pt;
   }
@@ -200,6 +163,7 @@ body {
   .data {
     text-align: left;
     font-size: 8pt;
+    padding-right: 24px;
   }
 
   .data h6 {
@@ -208,19 +172,19 @@ body {
   }
 
   .attribution {
+    display: flex;
+    flex-direction: row;
     justify-content: flex-end;
-    margin-top: 8px;
-    padding-right: 32px;
   }
 }
 
 @media (min-width: 1025px) {
-  .container {
-    margin-left: 160px;
-    margin-right: 160px;
+  body {
+    padding-right: 140px;
+    padding-left: 140px;
   }
 
-  .title {
+  h1 {
     font-size: 22pt;
   }
 
@@ -234,5 +198,9 @@ body {
 
   .data h6 {
     font-size: 18pt;
+  }
+
+  .attribution {
+    font-size: 8pt;
   }
 }
