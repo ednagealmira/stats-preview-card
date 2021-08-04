@@ -69,7 +69,7 @@ h1 span {
   color: #d53ea2;
 }
 
-.subtitle {
+.subtitle p {
   text-align: center;
   font-weight: 400;
   font-size: 11pt;
@@ -122,7 +122,7 @@ h1 span {
   }
 
   .content {
-    padding: 48px;
+    padding: 48px 72px 48px 48px;
   }
 
   .card {
@@ -143,17 +143,20 @@ h1 span {
   h1 {
     text-align: left;
     font-size: 18pt;
+    margin-top: 0px;
   }
 
-  .subtitle {
+  .subtitle p {
     text-align: left;
-    font-size: 8pt;
+    font-size: 10pt;
+    margin: 0px;
   }
 
   .datas {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    margin-top: 24px;
   }
 
   .data {
@@ -179,12 +182,20 @@ h1 span {
     padding-left: 140px;
   }
 
-  h1 {
-    font-size: 22pt;
+  .content {
+    padding: 56px 96px 56px 56px;
   }
 
-  .subtitle {
-    font-size: 11pt;
+  h1 {
+    font-size: 24pt;
+  }
+
+  .subtitle p {
+    font-size: 12pt;
+  }
+
+  .datas {
+    margin-top: 40px;
   }
 
   .data {
