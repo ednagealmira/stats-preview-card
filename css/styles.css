@@ -34,6 +34,7 @@ body {
   height: auto;
   border-radius: 10px 10px 0px 0px;
   filter: grayscale();
+  object-fit: cover;
 }
 
 .overlay {
@@ -53,9 +54,6 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center;
-}
-
-.content {
   padding: 32px 24px 50px;
 }
 
@@ -64,6 +62,7 @@ h1 {
   font-weight: 800;
   font-size: 20pt;
   color: rgb(53, 60, 60);
+  padding-top: 0px;
 }
 
 h1 span {
@@ -78,7 +77,6 @@ h1 span {
 }
 
 .data {
-  padding-top: 16px;
   text-align: center;
   font-weight: 400;
   font-size: 10pt;
@@ -91,7 +89,7 @@ h1 span {
   margin: 0px;
   /* padding-bottom: px; */
   font-weight: 800;
-  font-size: 18pt;
+  font-size: 16pt;
   color: rgb(53, 60, 60);
 }
 
@@ -119,8 +117,12 @@ h1 span {
     height: 94vh;
   }
 
+  .container-content {
+    padding: 0px;
+  }
+
   .content {
-    padding: 50px;
+    padding: 48px;
   }
 
   .card {
@@ -151,12 +153,12 @@ h1 span {
   .datas {
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
   }
 
   .data {
     text-align: left;
     font-size: 8pt;
-    padding-right: 24px;
   }
 
   .data h6 {
@@ -187,11 +189,10 @@ h1 span {
 
   .data {
     font-size: 10pt;
-    padding-right: 40px;
   }
 
   .data h6 {
-    font-size: 18pt;
+    font-size: 16pt;
   }
 
   .attribution {
